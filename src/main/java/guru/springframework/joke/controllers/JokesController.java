@@ -1,6 +1,6 @@
-package com.example.demo.controllers;
+package guru.springframework.joke.controllers;
 
-import com.example.demo.services.JokeCollection;
+import guru.springframework.joke.services.JokeCollection;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
