@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class JokesController {
 
-    JokeCollection jokeCollection;
+    private JokeCollection jokeCollection;
 
     public JokesController(JokeCollection jokeCollection) {
         this.jokeCollection = jokeCollection;
@@ -19,6 +19,7 @@ public class JokesController {
 
     @RequestMapping("/")
     public String getJoke(Model model){
+
         model.addAttribute("joke", jokeCollection.getRandomJoke());
         return "chucknorris";
     }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ChuckNorrisJokeCollection implements JokeCollection {
 
-    ChuckNorrisQuotes chuckNorrisQuotes;
+    private final ChuckNorrisQuotes chuckNorrisQuotes;
 
     public ChuckNorrisJokeCollection() {
         this.chuckNorrisQuotes = new ChuckNorrisQuotes();
