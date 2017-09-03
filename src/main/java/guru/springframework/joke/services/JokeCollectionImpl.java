@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
  * @author Nikolay Horushko
  */
 @Service
-public class ChuckNorrisJokeCollection implements JokeCollection {
+public class JokeCollectionImpl implements JokeCollection {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public ChuckNorrisJokeCollection() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokeCollectionImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
